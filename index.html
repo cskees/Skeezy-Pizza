@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeezy Pizza | Greasy. Fast. Questionable.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <h1 class="logo" aria-label="Skeezy Pizza">SKEEZY PIZZA</h1>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#menu">Menu</a>
+                <a href="#specials">Specials</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="cart-btn" id="cart-toggle" type="button" aria-label="Open cart" aria-controls="cart-modal" aria-expanded="false">
+                Cart (<span id="cart-count">0</span>)
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-content">
+                <p class="eyebrow">Open Late • Questionable Decisions • Great Pizza</p>
+                <h2 id="hero-title">The Greasiest Slice in the Neighborhood</h2>
+                <p>Hand-tossed dough, molten cheese, and chaotic topping choices that somehow always work.</p>
+                <a href="#menu" class="btn" id="hero-cta">See The Crimes</a>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <h3>Menu</h3>
+                <div class="menu-grid" id="menu-grid"></div>
+            </div>
+        </section>
+
+        <section id="specials" class="specials">
+            <div class="container specials-grid">
+                <article>
+                    <h3>Tonight's Special</h3>
+                    <p>2 large pies + garlic knots + 2 sodas</p>
+                    <p class="special-price">$24.99</p>
+                </article>
+                <article>
+                    <h3>Lunch Slice Deal</h3>
+                    <p>2 slices + drink, weekdays 11am-2pm</p>
+                    <p class="special-price">$7.99</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container contact-grid">
+                <div>
+                    <h3>Contact</h3>
+                    <p>Call us at <a href="tel:+15550121">(555) 0121</a></p>
+                    <p>123 Back Alley Ave, Slice City</p>
+                    <p>Sun-Thu: 11am-11pm | Fri-Sat: 11am-2am</p>
+                </div>
+                <div class="order-box">
+                    <h3>Place a Pickup Order</h3>
+                    <p>Press the button and trust the process.</p>
+                    <button class="btn" id="order-btn" type="button">Place Order</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="grease-stat">
+            Total Grease Consumed: <span id="grease-count">1,240</span> Gallons
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 skeezypizza.com - Hosted on a Synology NAS in a basement somewhere.</p>
+    </footer>
+
+    <div class="cart-modal hidden" id="cart-modal" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true">
+        <div class="cart-panel" tabindex="-1">
+            <div class="cart-header">
+                <h3 id="cart-title">Your Cart</h3>
+                <button class="cart-close" id="cart-close" type="button" aria-label="Close cart">x</button>
+            </div>
+            <ul class="cart-list" id="cart-list"></ul>
+            <p class="cart-empty" id="cart-empty">Your cart is empty.</p>
+            <div class="cart-totals">
+                <p><span>Subtotal</span><span>$<span id="cart-subtotal">0.00</span></span></p>
+                <p><span>Tax (8%)</span><span>$<span id="cart-tax">0.00</span></span></p>
+                <p class="cart-grand"><span>Total</span><span>$<span id="cart-total">0.00</span></span></p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-actions">
+                    <button class="btn" id="cart-order-btn" type="button">Place Order</button>
+                    <button class="btn clear-btn" id="cart-clear" type="button">Clear Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+
