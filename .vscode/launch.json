@@ -8,7 +8,7 @@
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
-            "url": "http://localhost:8080",
+            "url": "https://skeezypizza.com:8443",
             "webRoot": "${workspaceFolder}"
         },
 
@@ -16,7 +16,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
+            "url": "http://",
             "webRoot": "${workspaceFolder}"
         }
     ]
